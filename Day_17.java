@@ -18,6 +18,8 @@
 //-----------------------------------------------------------------------------------------------------------------
 // RECURSION :-- 
 
+// QUESTION >>> PRINT NO. FROM 5 TO 1 ?
+
 // class RecursionClass{
 
 //     public static void PrintNumber  (int n) {
@@ -37,20 +39,42 @@
 
 //-----------------------------------------------------------------------------------------------------------------
 
-class RecursionClass{
+// QUESTION >>> PRINT NO. FROM 1 TO 5 ?
 
-    public static void PrintArray(int n) {
+// class RecursionClass{
+//     public static void PrintNumber(int n){
 
-        if ( n == 0) {
+//         if (n == 6) {
+//             return;
+//         }
+//         System.out.println(n);
+//         PrintNumber(n+1);
+//     }
+//     public static void main (String args []) {
+
+//         int n = 1;
+//         PrintNumber(n);
+//     }
+// }
+
+//-----------------------------------------------------------------------------------------------------------------
+
+// QUESTION >>> PRINT SUM OF FIRST N NATURAL NUMBERS ?
+
+class NaturalClass{
+    public static void PrintSum(int i, int n, int sum) {
+
+        if (i == n){
+            sum += i;
+            System.out.println(sum);
             return;
         }
-
-        System.out.println(n);
-        PrintArray(n-1);
+        sum += i;
+        PrintSum(i+1, n, sum);
+        System.out.println(i);
+        
     }
     public static void main (String args []) {
-
-        int n = 5;
-        PrintArray(n);
+        PrintSum(1, 5, 0);
     }
 }
