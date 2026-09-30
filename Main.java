@@ -82,28 +82,28 @@
 //-----------------------------------------------------------------------------------------------------------------
 
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-public class Main {
+// public class Main {
 
-    static int factorial(int n) {
+//     static int factorial(int n) {
 
-        // Base Case
-        if (n == 0 || n == 1) {
-            return 1;
-        }
+//         // Base Case
+//         if (n == 0 || n == 1) {
+//             return 1;
+//         }
 
-        // Recursive Case
-        return n * factorial(n - 1);
-    }
+//         // Recursive Case
+//         return n * factorial(n - 1);
+//     }
 
-    public static void main(String[] args) {
+//     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+//         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter a number: ");
-        int n = sc.nextInt();
+//         System.out.print("Enter a number: ");
+//         int n = sc.nextInt();
 
-        System.out.println("Factorial: " + factorial(n));
-    }
-}
+//         System.out.println("Factorial: " + factorial(n));
+//     }
+// }
